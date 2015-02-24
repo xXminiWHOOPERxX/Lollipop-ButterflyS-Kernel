@@ -1329,6 +1329,8 @@ static void msmfb_onchg_resume(struct early_suspend *h)
 #endif 
 #endif
 
+static int unset_bl_level, bl_updated;
+static int bl_level_old;
 
 #ifdef CONFIG_FB_MSM_ESD_WORKAROUND
 void esd_wq_routine(struct work_struct *work) {
@@ -2101,6 +2103,11 @@ static int msm_fb_register(struct msm_fb_data_type *mfd)
 	MSM_FB_INFO
 	    ("FrameBuffer[%d] %dx%d size=%d bytes is registered successfully!\n",
 	     mfd->index, fbi->var.xres, fbi->var.yres, fbi->fix.smem_len);
+
+#ifdef CONFIG_UPDATE_LCDC_LUT
+	if (msm_fb_pdata->update_lcdc_lut)
+		msm_fb_pdata->update_lcdc_lut();
+#endif
 
 #ifdef CONFIG_FB_MSM_LOGO
 	
