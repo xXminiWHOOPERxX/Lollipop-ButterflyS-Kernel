@@ -27,6 +27,11 @@
 #include <mach/htc_battery_core.h>
 #include <linux/android_alarm.h>
 #include <mach/board_htc.h>
+
+#ifdef CONFIG_TOUCHSCREEN_SYNAPTICS_SWEEP2WAKE
+#include <linux/synaptics_i2c_rmi.h>
+#endif
+
 #ifdef CONFIG_BLX
 #include <linux/blx.h>
 int soc_level, soc_flag;
