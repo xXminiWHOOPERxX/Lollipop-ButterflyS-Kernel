@@ -129,7 +129,7 @@
 
 #define MSM_PMEM_ADSP_SIZE         0x8600000
 #define MSM_PMEM_AUDIO_SIZE        0x4CF000
-#define MSM_PMEM_SIZE             0x8200000 
+#define MSM_PMEM_SIZE             0x0 
 
 #ifdef CONFIG_MSM_MULTIMEDIA_USE_ION
 #define HOLE_SIZE		0x20000
@@ -140,7 +140,7 @@
 #define MSM_ION_HEAP_NUM	7
 #else
 #define MSM_PMEM_KERNEL_EBI1_SIZE  0x6400000
-#define MSM_ION_KGSL_SIZE	0x640000
+#define MSM_ION_KGSL_SIZE	0x0
 #define MSM_ION_SF_SIZE		(MSM_PMEM_SIZE + MSM_ION_KGSL_SIZE)
 #define MSM_ION_HEAP_NUM	8
 #endif
