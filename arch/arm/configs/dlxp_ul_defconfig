@@ -1860,6 +1860,7 @@ CONFIG_UNIX98_PTYS=y
 # CONFIG_TRACE_SINK is not set
 # CONFIG_DEVMEM is not set
 # CONFIG_DEVKMEM is not set
+CONFIG_FRANDOM=y
 
 #
 # Serial drivers
@@ -3407,6 +3408,7 @@ CONFIG_ANDROID_LOW_MEMORY_KILLER_AUTODETECT_OOM_ADJ_VALUES=y
 # CONFIG_ANDROID_INTF_ALARM_DEV is not set
 # CONFIG_PHONE is not set
 # CONFIG_USB_WPAN_HCD is not set
+CONFIG_CPUPOWER=y
 
 #
 # Qualcomm MSM specific device drivers
