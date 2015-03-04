@@ -1479,4 +1479,3 @@ module_exit(akm8963_exit);
 
 MODULE_DESCRIPTION("AKM8963 compass driver");
 MODULE_LICENSE("GPL");
-
