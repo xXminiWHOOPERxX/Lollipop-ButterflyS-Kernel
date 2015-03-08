@@ -1,8 +1,13 @@
 VERSION = 3
 PATCHLEVEL = 4
 SUBLEVEL = 105
+<<<<<<< HEAD
 EXTRAVERSION = Mini
 NAME = 
+=======
+EXTRAVERSION =
+NAME = Saber-toothed Squirrel
+>>>>>>> ce2d15c86c65b3203f0adbea33bf11ce6c1c0ca2
 
 # *DOCUMENTATION*
 # To see a list of typical targets execute "make help"

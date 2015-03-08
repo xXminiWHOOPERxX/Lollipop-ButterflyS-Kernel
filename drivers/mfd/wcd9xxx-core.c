@@ -81,6 +81,7 @@ int wcd9xxx_reg_read(struct wcd9xxx *wcd9xxx, unsigned short reg)
 }
 EXPORT_SYMBOL_GPL(wcd9xxx_reg_read);
 
+<<<<<<< HEAD
 #ifdef CONFIG_SOUND_CONTROL_HAX_3_GPL
 int wcd9xxx_reg_read_safe(struct wcd9xxx *wcd9xxx, unsigned short reg)
 {
@@ -97,6 +98,8 @@ int wcd9xxx_reg_read_safe(struct wcd9xxx *wcd9xxx, unsigned short reg)
 EXPORT_SYMBOL_GPL(wcd9xxx_reg_read_safe);
 #endif
 
+=======
+>>>>>>> ce2d15c86c65b3203f0adbea33bf11ce6c1c0ca2
 static int wcd9xxx_write(struct wcd9xxx *wcd9xxx, unsigned short reg,
 			int bytes, void *src, bool interface_reg)
 {
