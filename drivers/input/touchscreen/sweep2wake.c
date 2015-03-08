@@ -446,7 +446,3 @@ static void __exit sweep2wake_exit(void)
 
 module_init(sweep2wake_init);
 module_exit(sweep2wake_exit);
-<<<<<<< HEAD
-
-=======
->>>>>>> ce2d15c86c65b3203f0adbea33bf11ce6c1c0ca2

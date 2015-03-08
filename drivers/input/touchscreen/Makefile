@@ -8,10 +8,6 @@ wm97xx-ts-y := wm97xx-core.o
 
 # for doubletap2wake, leave 1st to avoid merge issues at the end of the file
 obj-$(CONFIG_TOUCHSCREEN_SYNAPTICS_SWEEP2WAKE)  += sweep2wake.o
-<<<<<<< HEAD
-=======
-obj-$(CONFIG_POCKET_DETECT)             += pocket_detect.o
->>>>>>> ce2d15c86c65b3203f0adbea33bf11ce6c1c0ca2
 obj-$(CONFIG_TOUCHSCREEN_88PM860X)	+= 88pm860x-ts.o
 obj-$(CONFIG_TOUCHSCREEN_AD7877)	+= ad7877.o
 obj-$(CONFIG_TOUCHSCREEN_AD7879)	+= ad7879.o

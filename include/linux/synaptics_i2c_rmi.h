@@ -19,10 +19,6 @@
 
 #ifdef CONFIG_TOUCHSCREEN_SYNAPTICS_SWEEP2WAKE
 #include <linux/input.h>
-<<<<<<< HEAD
-=======
-#include <linux/leds-pm8921.h>
->>>>>>> ce2d15c86c65b3203f0adbea33bf11ce6c1c0ca2
 #endif
 
 #define SYNAPTICS_I2C_RMI_NAME "synaptics-rmi-ts"

@@ -21,10 +21,7 @@
 #include <linux/platform_device.h>
 #include <linux/slab.h>
 #include <mach/board_htc.h>
-<<<<<<< HEAD
 
-=======
->>>>>>> ce2d15c86c65b3203f0adbea33bf11ce6c1c0ca2
 #ifdef CONFIG_TOUCHSCREEN_SYNAPTICS_SWEEP2WAKE
 #include <linux/synaptics_i2c_rmi.h>
 #endif
