@@ -197,7 +197,6 @@ CROSS_COMPILE	?= $(CONFIG_CROSS_COMPILE:"%"=%)
 ARCH		:= arm
 CROSS_COMPILE	:= /home/aey/Android/Kernels/toolchains/bin/arm-cortex_a15-linux-gnueabihf-
 
-
 # Architecture as present in compile.h
 UTS_MACHINE 	:= $(ARCH)
 SRCARCH 	:= $(ARCH)
@@ -353,7 +352,11 @@ CHECKFLAGS     := -D__linux__ -Dlinux -D__STDC__ -Dunix -D__unix__ \
 CFLAGS_MODULE   =
 AFLAGS_MODULE   =
 LDFLAGS_MODULE  =
+<<<<<<< HEAD
 CFLAGS_KERNEL	= -fgcse-lm -fgcse-sm -fsched-spec-load -ffast-math -fsingle-precision-constant -mtune=cortex-a15 -mfpu=neon-vfpv4
+=======
+CFLAGS_KERNEL	=
+>>>>>>> 80f4c1c751737689dbee50809eed5c43eca2869c
 AFLAGS_KERNEL	=
 CFLAGS_GCOV	= -fprofile-arcs -ftest-coverage
 
@@ -565,7 +568,11 @@ all: vmlinux
 ifdef CONFIG_CC_OPTIMIZE_FOR_SIZE
 KBUILD_CFLAGS	+= -Os
 else
+<<<<<<< HEAD
 KBUILD_CFLAGS	+= -O3
+=======
+KBUILD_CFLAGS	+= -O2
+>>>>>>> 80f4c1c751737689dbee50809eed5c43eca2869c
 endif
 
 include $(srctree)/arch/$(SRCARCH)/Makefile
