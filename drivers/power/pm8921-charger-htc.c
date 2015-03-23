@@ -2559,7 +2559,7 @@ kick_err:
 int adjust_chg_vin_min(struct pm8921_chg_chip *chip,
 				int only_increased)
 {
-	int rc = 0, vbat_mv, ori_vin_min, target_vin_min;
+	int rc = 0, vbat_mv = 0, ori_vin_min, target_vin_min;
 
 	if (reverse_boost_fix_ongoing) {
 		pr_info("%s: Under excuting reverse boost fix. Skip.\n", __func__);
@@ -2594,7 +2594,7 @@ int adjust_chg_vin_min(struct pm8921_chg_chip *chip,
 #define ADJUST_VDDMAX_VALUE	100
 static int decrease_vddmax_configure_work(void)
 {
-	int vbat_mv;
+	int vbat_mv = 0;
 
 	
 	if (!the_chip) {
@@ -4842,7 +4842,7 @@ static void dump_all(int more)
 {
 	int rc;
 	struct pm8xxx_adc_chan_result result;
-	int vbat_mv, ibat_ma, tbat_deg, soc, id_mv, iusb_ma;
+	int vbat_mv = 0, ibat_ma, tbat_deg, soc, id_mv, iusb_ma;
 	int fcc, health, present, charger_type, status;
 	int fsm, ac_online, usb_online, dc_online, vin_min;
 	int ichg = 0, vph_pwr = 0, usbin = 0, dcin = 0, pj_exist = 0;
